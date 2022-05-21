@@ -1,0 +1,14 @@
+{
+  "../node_modules/next/dist/client/index.js -> ../pages/_error": {
+    "id": 9894,
+    "files": [
+      "static/chunks/894.884bc9854a9cfe85.js"
+    ]
+  },
+  "_app.tsx -> amfe-flexible": {
+    "id": 1335,
+    "files": [
+      "static/chunks/335.f7de1529be8c4e9e.js"
+    ]
+  }
+}

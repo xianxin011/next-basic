@@ -13,8 +13,14 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "baseUrl": ".", // 配置根路径
+    "paths": {
+      "@@/*": ["./styles/*"], // 配置styles代理名
+      "@/*":["./*"]
+    }
   },
+  
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }

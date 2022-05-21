@@ -1,6 +1,17 @@
 /** @type {import('next').NextConfig} */
+const withLess = require('next-with-less');
+
 const nextConfig = {
-  reactStrictMode: true,
+  distDir: 'dist',
+  cssModules: true,
+  lessLoaderOptions: {
+    lessOptions: {
+      modifyVars: {
+        "@primary-color": "#f74a49",
+        "@border-radius-base": ".5em"
+      }
+    }
+  }
 }
 
-module.exports = nextConfig
+module.exports = withLess(nextConfig)
